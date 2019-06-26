@@ -1,10 +1,12 @@
-<h1>Pirate Name: <%= @pirate.name %></h1>
+<h1>Pirate</h1>
+  <li>Name: <%= @pirate.name %></li>
   <li>Weight: <%= @pirate.weight %></li>
   <li>Height: <%= @pirate.height %></li>
 <br>
-<% @ships.each do |ship_hash| %>
-  <h2>Ship Name: <%= ship_hash[:name] %></h2>
-    <li>Type: <%= ship_hash[:type] %></li>
-    <li>Booty: <%= ship_hash[:booty] %></li>
-  <br>
-<% end %>
+<h2>Ships</h2>
+  <% @ships.each do |ship_hash| %>
+    <h2>Ship Name: <%= ship_hash[:name] %></h2>
+      <li>Type: <%= ship_hash[:type] %></li>
+      <li>Booty: <%= ship_hash[:booty] %></li>
+    <br>
+  <% end %>
