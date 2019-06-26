@@ -1,12 +1,9 @@
-<h1><%= @pirate.name %></h1>
-  <li><%= @pirate.weight %></li>
-  <li><%= @pirate.height %></li>
+<h1>Pirate Name: <%= @pirate.name %></h1>
+  <li>Weight: <%= @pirate.weight %></li>
+  <li>Height: <%= @pirate.height %></li>
 <br>
 <% @ships.each do |ship_hash| %>
-  <h2><%= @ships[0].name %></h2>
-    <li><%= @ships[0].type %></li>
-    <li><%= @ships[0].booty %></li>
-<br>
-<h2><%= @ships[1].name %></h2>
-  <li><%= @ships[1].type %></li>
-  <li><%= @ships[1].booty %></li>
+  <h2>Ship Name: <%= ship_hash["name"] %></h2>
+    <li>Type: <%= ship_hash["type"] %></li>
+    <li>Booty: <%= ship_hash["booty"] %></li>
+<% end %>
