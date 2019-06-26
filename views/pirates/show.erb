@@ -4,8 +4,8 @@
   <p>Height: <%= @pirate.height %></p><br>
 <br>
 <h2>Ships</h2>
-  <% @ships.each do |ship_hash| %>
-    <p>Name: <%= ship_hash[:name] %></p><br>
-    <p>Type: <%= ship_hash[:type] %></p><br>
-    <p>Booty: <%= ship_hash[:booty] %></p><br><br>
+  <% @ships.each do |ship| %>
+    <p>Name: <%= ship.name %></p><br>
+    <p>Type: <%= ship.type %></p><br>
+    <p>Booty: <%= ship.booty %></p><br><br>
   <% end %>
